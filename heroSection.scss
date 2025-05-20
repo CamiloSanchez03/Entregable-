@@ -1,0 +1,84 @@
+
+.hero {
+  
+  background-image: linear-gradient(rgba(192, 199, 211, 0.7), rgba(30, 41, 59, 0.7)), url('/src/assets/fondo.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: #f3f4f6;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+
+  &__overlay {
+    background: rgba(195, 197, 202, 0.85);
+    padding: 3rem 2.5rem;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 95%;
+    width: 600px;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
+    border: 1.5px solid rgba(255, 255, 255, 0.925);
+    backdrop-filter: blur(4px);
+  }
+
+  h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #1d1c1b;
+    text-shadow: 0 4px 16px rgba(0,0,0,0.7);
+  }
+
+  &__search {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1.5rem;
+
+    input,
+    button {
+      padding: 1rem 1.2rem;
+      border: none;
+      border-radius: 10px;
+      font-size: 1.1rem;
+      outline: none;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="date"] {
+      flex: 1;
+      min-width: 160px;
+      background: #f3f4f6;
+      color: #22223b;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      transition: box-shadow 0.2s;
+      &:focus {
+        box-shadow: 0 4px 16px #050505fd;
+      }
+    }
+
+    button {
+      background: linear-gradient(90deg, #000000 60%, #020202 100%);
+      color: #ebebec;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.3s, color 0.3s;
+      box-shadow: 0 2px 8px rgba(251,191,36,0.15);
+
+      &:hover {
+        background: linear-gradient(90deg, #f59e42 60%, #fbbf24 100%);
+        color: #f1a8a8;
+      }
+    }
+  }
+}
+
+
+

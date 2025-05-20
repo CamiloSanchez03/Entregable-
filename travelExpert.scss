@@ -1,0 +1,54 @@
+.travel-expert{
+  background-image: url('../assets/expert.jpg');
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 12px;
+  padding: 2rem;
+  margin: 2rem ;
+  max-width: 900px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+
+  
+  .travel-expert__overlay{
+    z-index: 1;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  
+  }
+
+  &before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.35);
+    border-radius: 12px;
+    z-index: 0;
+  }
+  .travel-expert__button{
+    margin-top: 1rem;
+    padding: 0.6rem 1.2rem;
+    background-color: #ffffffcc;
+    color: #000;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    &:hover {
+      background-color: #fff;
+    }
+  }
+}
+.travel-expert {
+  transition: box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1), transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.28);
+    transform: translateY(-4px) scale(1.02);
+  }
+}

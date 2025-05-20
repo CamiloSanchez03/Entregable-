@@ -1,0 +1,87 @@
+.app-promo {
+  display: flex;
+  justify-content: space-between; // Added
+  align-items: center;
+  background: #e6f0ff;
+  padding: 2rem;
+  border-radius: 20px;
+  margin-top: 2rem;
+
+  &__content {
+    flex: 1 1 400px;
+    max-width: 500px; // Added
+    padding-right: 2rem;
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    &__tabs {
+      display: flex;
+      margin-bottom: 1rem;
+
+      button {
+        padding: 0.5rem 1rem;
+        border: none;
+        background: #615858;
+        margin-right: 0.5rem;
+        border-radius: 6px;
+
+        &.active {
+          background: #0077ff;
+          color: white;
+          font-weight: bold; // Added
+        }
+      }
+    }
+
+    &__input {
+      display: flex;
+      margin: 1rem 0; // Changed
+
+      input {
+        flex: 1;
+        padding: 0.5rem;
+        border: 1px solid #ccc;
+        border-radius: 8px 0 0 8px;
+      }
+
+      button {
+        padding: 0.5rem 1rem;
+        background: #99adc4;
+        color: rgb(99, 94, 94);
+        border: none;
+        border-radius: 0 8px 8px 0;
+      }
+    }
+
+    &__stores {
+      display: flex;
+      gap: 1rem;
+
+      img {
+        height: 40px;
+        width: 120px; // Added
+        margin-right: 1rem; // Added
+      }
+    }
+  }
+
+  &__image {
+    flex: 1 1 300px;
+    text-align: center;
+
+    img {
+      max-width: 300px; // Added
+      width: 100%; // Added
+      height: auto;
+       
+    }
+  }
+}

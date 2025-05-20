@@ -1,0 +1,41 @@
+.types {
+    padding: 2rem;
+  
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+  
+    &__grid {
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+  
+    &__card {
+      text-align: center;
+      border-radius: 12px;
+      overflow: hidden;
+      background-color: #fff;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+  
+      img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+      }
+  
+      span {
+        display: block;
+        padding: 0.75rem;
+        font-weight: bold;
+        font-size: 1rem;
+      }
+      
+    }
+  }
+  .types__card:hover img {
+    transform: scale(1.08) translateY(-5px);
+  }
